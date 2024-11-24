@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="509.0" prefWidth="403.0" style="-fx-background-color: #b84234;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_part2_modified.controller.customSearchPageController">
+   <children>
+      <Circle fill="DODGERBLUE" layoutX="182.0" layoutY="479.0" radius="13.0" stroke="BLACK" strokeType="INSIDE" />
+      <ListView fx:id="searchResultListView" layoutX="18.0" layoutY="49.0" prefHeight="442.0" prefWidth="363.0" AnchorPane.bottomAnchor="17.600000000000023" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="21.80000000000001" AnchorPane.topAnchor="49.0" />
+      <Label fx:id="label" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" prefHeight="51.0" prefWidth="172.0" text="Search Result :" textAlignment="CENTER" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Bauhaus 93" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

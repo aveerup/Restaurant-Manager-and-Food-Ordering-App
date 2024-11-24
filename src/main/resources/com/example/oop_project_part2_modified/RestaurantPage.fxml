@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="clientRestaurantPageAnchor" prefHeight="708.0" prefWidth="667.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.oop_project_part2_modified.controller.RestaurantPageController">
+   <children>
+      <Circle fill="#e1a13a" layoutX="239.0" layoutY="96.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#e1a13a" layoutX="626.0" layoutY="166.0" radius="19.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#946216" layoutX="614.0" layoutY="248.0" radius="39.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ea8526f2" layoutX="540.0" layoutY="143.0" radius="55.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#faa316c1" layoutX="390.0" layoutY="55.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="rNameLabel" alignment="CENTER" layoutX="197.0" layoutY="107.0" prefHeight="40.0" prefWidth="312.0" style="-fx-background-color: #e7dfdf;" text="restaurant name" textAlignment="JUSTIFY">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="rZipCodeLabel" alignment="CENTER" layoutX="197.0" layoutY="208.0" prefHeight="40.0" prefWidth="312.0" style="-fx-background-color: #e7dfdf;" text="restaurant zipcode" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="rRatingLabel" alignment="CENTER" layoutX="197.0" layoutY="260.0" prefHeight="40.0" prefWidth="312.0" style="-fx-background-color: #e7dfdf;" text="restaurant rating" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="rIDLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="197.0" layoutY="159.0" prefHeight="40.0" prefWidth="312.0" style="-fx-background-color: #e7dfdf;" text="restaurant ID" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="107.0" prefHeight="40.0" prefWidth="125.0" text="Restaurant Name">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="159.0" prefHeight="40.0" prefWidth="110.0" text="Restaurant ID">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="208.0" prefHeight="40.0" prefWidth="135.0" text="Restaurant ZipCode">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="53.0" layoutY="260.0" prefHeight="40.0" prefWidth="126.0" text="Restaurant Rating ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TableView fx:id="restaurantMenu" layoutX="23.0" layoutY="308.0" onMouseClicked="#print" prefHeight="400.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="fCategory" prefWidth="139.19997882843018" resizable="false" text="Category" />
+          <TableColumn fx:id="fName" prefWidth="308.00001525878906" resizable="false" text="Name" />
+            <TableColumn fx:id="fPrice" prefWidth="175.199951171875" resizable="false" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="baxkButton" alignment="CENTER" layoutX="552.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#backButtonClicked" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #db3535;" text="Back" textAlignment="RIGHT" textFill="#ffffffdb">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label layoutX="32.0" layoutY="14.0" prefHeight="82.0" prefWidth="258.0" text="Restaurant Info" textFill="#e1a13a">
+         <font>
+            <Font name="Bauhaus 93" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
